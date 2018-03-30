@@ -1,0 +1,18 @@
+SparkConsumer2.3
+
+
+da provare con una versione di Spark > 2.0.0
+
+Kafka2SparkDBConsumer2 è una nuova versione per il recupero e il salvataggio
+degli offset di Kafka. 
+
+La parte di recupero degli offset è compatibile anche con la versione Spark1.6.1 
+
+La parte di commit degli offset invece necessita libreria 
+spark-streaming-kafka-0-10_2.10 che comporta grossi cambiamenti e purtroppo
+necessita yna versione di spark maggiore
+
+L'incompatibilità è lo spostamento nel core di Spark
+del
+org.apache.spark.Logger in
+org.apache.spark.internal.Logger
